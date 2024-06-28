@@ -1,15 +1,37 @@
-.test {
-    background-color: pink;
-}
+
 
 .container {
-    height: 800px;
     width: 100%;
-    background-color: red;
 }
+
+.navbar {
+    height: 60px;
+
+    > img {
+        height: 100%;
+    }
+}
+
+.content {
+    width: 80%; 
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
 
 .card {
     border-radius: 10px;
-    width: 350px;
-    height: 500px;
+    width: 200px;
+    height: 300px;
+    overflow: hidden;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+
+.card-content {
+    width: 100%;
+    margin: auto;
 }
