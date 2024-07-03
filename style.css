@@ -13,13 +13,17 @@
 }
 
 .content {
-    width: 80%; 
-    margin: auto;
+    max-width: 1200px;
+    margin: 0 auto;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    /* grid-template-columns: 1fr 1fr 1fr; */
     gap: 20px;
 }
 
+
+@media (min-width: 600px) {
+    .content { grid-template-columns: 1fr 1fr 1fr }
+  }
 
 .card {
     border-radius: 10px;
@@ -29,6 +33,7 @@
     background-color: black;
     display: flex;
     justify-content: center;
+    
 }
 
 .card-content {
