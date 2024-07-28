@@ -9,7 +9,8 @@ document.getElementById('fetchButton').addEventListener('click', () => {
             data.data.map((e,i)=> {
                 const gifUrl =  e.images.original.url;
                 const gifDiv = document.createElement('div');
-                gifDiv.innerHTML = `<img src="${gifUrl}" alt="Random Gif">`;
+                gifDiv.innerHTML = `<img src="${gifUrl}" class='card-content' alt="Random Gif">`;
+                gifDiv.classList.add("card");
                 document.getElementById('gifContainer').appendChild(gifDiv);
             })
             
